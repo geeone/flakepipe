@@ -96,7 +96,8 @@ Listed in `requirements.txt`, including:
 - SQLAlchemy >= 1.4.15
 - snowflake-connector-python >= 2.8.1
 - snowflake-sqlalchemy >= 1.2.4
-- pandas >= 1.2.4, < 2.1
+- pandas >= 1.4.0, < 2.1
+- numpy>=1.21.0, <1.26.0
 
 > ✅ Tested with pandas 1.2.4 to 1.5.3  
 > ⚠️ Compatibility with pandas 2.x is expected but not officially guaranteed
