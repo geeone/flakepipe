@@ -13,7 +13,7 @@ with open(os.path.join(path, "README.md"), "r", encoding="utf-8") as f:
 
 setup(
     name='flakepipe',
-    version='0.1.0',
+    version='0.1.1',
     author='Sergei Denisenko',
     author_email='your.email@example.com',
     description='Reusable module for uploading datasets to Snowflake via stage',
@@ -33,7 +33,7 @@ setup(
         'Operating System :: OS Independent',
     ],
     license='MIT',
-    python_requires='>=3.8',
+    python_requires='>=3.8,<3.12',
     install_requires=requirements,
     keywords='snowflake upload ETL csv stage data',
 )
