@@ -1,13 +1,14 @@
-
 import os
+
 from setuptools import setup, find_packages
 
-here = os.path.abspath(os.path.dirname(__file__))
 
-with open(os.path.join(here, "requirements.txt")) as f:
+path = os.path.abspath(os.path.dirname(__file__))
+
+with open(os.path.join(path, "requirements.txt")) as f:
     requirements = f.read().splitlines()
 
-with open(os.path.join(here, "README.md"), "r", encoding="utf-8") as f:
+with open(os.path.join(path, "README.md"), "r", encoding="utf-8") as f:
     long_description = f.read()
 
 setup(
@@ -25,13 +26,14 @@ setup(
         'Bug Tracker': 'https://github.com/geeone/flakepipe/issues',
     },
     packages=find_packages(),
+    include_package_data=True,
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
     ],
     license='MIT',
-    python_requires='>=3.7',
+    python_requires='>=3.8',
     install_requires=requirements,
     keywords='snowflake upload ETL csv stage data',
 )
