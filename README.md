@@ -5,6 +5,7 @@
 [![Python](https://img.shields.io/pypi/pyversions/flakepipe)](https://pypi.org/project/flakepipe/)
 [![License](https://img.shields.io/github/license/geeone/flakepipe)](LICENSE)
 [![Build Status](https://github.com/geeone/flakepipe/actions/workflows/build.yml/badge.svg)](https://github.com/geeone/flakepipe/actions/workflows/build.yml)
+[![Codecov](https://codecov.io/gh/geeone/flakepipe/branch/main/graph/badge.svg)](https://codecov.io/gh/geeone/flakepipe)
 
 **Flakepipe** is a lightweight, reusable Python module for uploading datasets to **Snowflake** via secure staging.
 

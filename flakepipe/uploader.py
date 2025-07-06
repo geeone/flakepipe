@@ -1,8 +1,10 @@
-
 import os
+
 import pandas as pd
+
 from .connection import get_engine
 from .utils import check_if_exists, normalize_columns
+
 
 def create_table(engine, table_name, columns, overwrite=False):
     replace_clause = "OR REPLACE" if overwrite else ""
@@ -11,10 +13,12 @@ def create_table(engine, table_name, columns, overwrite=False):
     with engine.connect() as conn:
         conn.execute(sql)
 
+
 def truncate_table(engine, table_name):
     sql = f"TRUNCATE TABLE {table_name}"
     with engine.connect() as conn:
         conn.execute(sql)
+
 
 def upload_csv_to_snowflake(config, file_path, schema, table_name,
                             truncate=False, overwrite=False,
@@ -32,7 +36,7 @@ def upload_csv_to_snowflake(config, file_path, schema, table_name,
             df = pd.read_csv(file_path, dtype=object)
             df.columns = normalize_columns(df.columns)
             df.to_csv(file_path, index=False, quoting=1, encoding='utf-8')
-            create_table(engine, table_name, df.columns, overwrite)
+            create_table(engine, table_name, df.columns.to_list(), overwrite)
 
         if truncate and not overwrite:
             truncate_table(engine, table_name)

@@ -1,7 +1,6 @@
-
-import snowflake.connector
 from snowflake.sqlalchemy import URL
 from sqlalchemy import create_engine
+
 
 def get_engine(config, schema, keep_alive=False):
     conn_url = URL(

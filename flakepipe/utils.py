@@ -1,9 +1,11 @@
+import re
 
 import pandas as pd
-import re
+
 
 def normalize_columns(columns):
     return [re.sub(r'_+', '_', re.sub(r'[^a-zA-Z\d]', '_', col)).upper() for col in columns]
+
 
 def check_if_exists(engine, schema, table_name):
     result = pd.read_sql(
