@@ -8,7 +8,7 @@
 
 **Flakepipe** is a lightweight, reusable Python module for uploading datasets to **Snowflake** via secure staging.
 
-It automates table creation, column normalization, and data ingestion using Snowflake’s `PUT` and `COPY INTO` commands -- making it ideal for ETL pipelines, scraping workflows, and reproducible data transfers.
+It automates table creation, column normalization, and data ingestion using Snowflake’s `PUT` and `COPY INTO` commands – making it ideal for ETL pipelines, scraping workflows, and reproducible data transfers.
 
 ---
 
@@ -118,6 +118,6 @@ Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 ## 🌍 Why Flakepipe?
 
 Flakepipe was born from repeated use in real-world data workflows, especially in scraping and ETL projects.  
-Instead of rewriting boilerplate Snowflake ingestion code, this tool wraps best practices into a portable, documented, and open solution -- freely available under an MIT license.
+Instead of rewriting boilerplate Snowflake ingestion code, this tool wraps best practices into a portable, documented, and open solution – freely available under an MIT license.
 
-Whether you’re building one-off scripts or production pipelines -- Flakepipe helps you do it right.
+Whether you’re building one-off scripts or production pipelines – Flakepipe helps you do it right.
