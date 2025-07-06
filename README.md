@@ -2,7 +2,7 @@
 # Flakepipe
 
 [![PyPI](https://img.shields.io/pypi/v/flakepipe)](https://pypi.org/project/flakepipe/)
-[![Python](https://img.shields.io/pypi/pyversions/flakepipe)](https://pypi.org/project/flakepipe/)
+[![Python](https://img.shields.io/badge/Python-3.8%20|%203.9%20|%203.10%20|%203.11-blue)](https://pypi.org/project/flakepipe/)
 [![License](https://img.shields.io/github/license/geeone/flakepipe)](LICENSE)
 [![Build Status](https://github.com/geeone/flakepipe/actions/workflows/build.yml/badge.svg)](https://github.com/geeone/flakepipe/actions/workflows/build.yml)
 [![Codecov](https://codecov.io/gh/geeone/flakepipe/branch/main/graph/badge.svg)](https://codecov.io/gh/geeone/flakepipe)
