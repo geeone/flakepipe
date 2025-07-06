@@ -1,6 +1,10 @@
 
 # Flakepipe
 
+[![PyPI](https://img.shields.io/pypi/v/flakepipe)](https://pypi.org/project/flakepipe/)
+[![Python](https://img.shields.io/pypi/pyversions/flakepipe)](https://pypi.org/project/flakepipe/)
+[![License](https://img.shields.io/github/license/geeone/flakepipe)](LICENSE)
+
 **Flakepipe** is a lightweight, reusable Python module for uploading datasets to **Snowflake** via secure staging.
 
 It automates table creation, column normalization, and data ingestion using Snowflake’s `PUT` and `COPY INTO` commands -- making it ideal for ETL pipelines, scraping workflows, and reproducible data transfers.
