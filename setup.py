@@ -1,10 +1,13 @@
 
+import os
 from setuptools import setup, find_packages
 
-with open("requirements.txt") as f:
+here = os.path.abspath(os.path.dirname(__file__))
+
+with open(os.path.join(here, "requirements.txt")) as f:
     requirements = f.read().splitlines()
 
-with open("README.md", "r", encoding="utf-8") as f:
+with open(os.path.join(here, "README.md"), "r", encoding="utf-8") as f:
     long_description = f.read()
 
 setup(
