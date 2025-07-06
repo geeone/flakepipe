@@ -13,9 +13,9 @@ with open(os.path.join(path, "README.md"), "r", encoding="utf-8") as f:
 
 setup(
     name='flakepipe',
-    version='0.1.1',
+    version='0.1.2',
     author='Sergei Denisenko',
-    author_email='your.email@example.com',
+    author_email='sergei.denisenko@ieee.org',
     description='Reusable module for uploading datasets to Snowflake via stage',
     long_description=long_description,
     long_description_content_type='text/markdown',
@@ -28,9 +28,19 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     classifiers=[
-        'Programming Language :: Python :: 3',
+        'Development Status :: 4 - Beta',
+        'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3 :: Only',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
+        'Topic :: Software Development :: Build Tools',
+        'Topic :: Software Development :: Libraries :: Python Modules',
+        'Topic :: Utilities'
     ],
     license='MIT',
     python_requires='>=3.8,<3.12',
