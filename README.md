@@ -25,17 +25,33 @@ It automates table creation, column normalization, and data ingestion using Snow
 
 ## ⚙️ Installation
 
-Clone or download this package and install with:
+### Supported Python Versions
+
+Flakepipe supports **Python ≥ 3.8**, and **< 3.12**.
+
+### Installing Flakepipe
+
+To install globally via PyPI (recommended):
 
 ```bash
+pip install flakepipe
+```
+
+To install locally from source (for development), use editable mode:
+
+```bash
+git clone https://github.com/geeone/flakepipe.git
+cd flakepipe
 pip install -e .
 ```
 
-Or install dependencies only:
+Alternatively, you can install only the dependencies (without installing the package itself):
 
 ```bash
 pip install -r requirements.txt
 ```
+
+> 💡 See the [Dependencies](#-dependencies) section for version details.
 
 ---
 
@@ -62,7 +78,7 @@ config = {
 
 ```python
 from flakepipe.uploader import upload_csv_to_snowflake
-from your_project.config import access_settings as config
+from your_project.config import config
 
 upload_csv_to_snowflake(
     config=config,
@@ -99,7 +115,7 @@ Listed in `requirements.txt`, including:
 - pandas >= 1.4.0, < 2.1
 - numpy>=1.21.0, <1.26.0
 
-> ✅ Tested with pandas 1.2.4 to 1.5.3  
+> ✅ Tested with pandas 1.4.x to 1.5.x  
 > ⚠️ Compatibility with pandas 2.x is expected but not officially guaranteed
 
 ---
